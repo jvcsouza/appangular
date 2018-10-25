@@ -3,20 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script>
-    var app = angular.module('myApp', []);
-    String.prototype.capitalizeFirstLetter = function() {
-    return this.charAt(0).toUpperCase() + this.slice(1);}</script>
-    <script>
-            app.controller('myCtrl', function($scope) {
-                $scope.nome = "João";
-                $scope.sobrenome = "Souza";
-                $scope.exibe = function(nome){
-                    return nome ? true : false;
-                };
-            });
-            </script>
+    <script src="./js/controllersAngular.js"></script>
     <title>SeriesLi</title>
 </head>
 <body>
