@@ -8,14 +8,15 @@ const app = express();
 
 app.engine("html", cons.swig);
 app.set("view engine", "html");
-app.set("views", __dirname+"/htdocs");
+app.set("views", __dirname + "/htdocs");
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use("/server/", router.serverRouter);
+app.use("/dados/", router.dadosRouter);
 app.use(express.static("htdocs"));
 app.get('/', (req, res) => {
-    res.sendFile(PATH.join(__dirname , '/htdocs/index.html'));
+    res.sendFile(PATH.join(__dirname, '/htdocs/index.html'));
 });
 
 app.listen(PORT);
-console.log("Servido em Execução em: localhost:", PORT)
+console.log("Servidor em Execução em: localhost:", PORT)
