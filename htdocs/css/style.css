@@ -10,8 +10,8 @@ html, body {
 .photo-panel > img {
 	position: absolute;
 	z-index: 10;
-	width: 105px;
+	width: 110px;
 	height: 145px;
 	top: 120px;
-	left: 25px;
+	left: 28px;
 }
