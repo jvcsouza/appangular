@@ -4,12 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
     <script src="./js/controllersAngular.js"></script>
     <title>SeriesLi</title>
 </head>
 <body>
-    <div>
+    <div class="w-100">
+        <img class="w-100" src="./imgs/back1.jpg">
+    </div>
+    <div class="photo-panel">
+        <img src="./imgs/retract1.jpg">
+    </div>
+    <div class="bg-dark w-100 p-3 text-light float-left">
+        <div class="info-serie float-right p-2">
+            <div>Mr.Robot</div>
+            <div class="text-mute">Ficção Cientifica / Tecnologia</div>
+        </div>
+    </div>
+
+    <!-- <div>
         {{ nome + " " + sobrenome  }} <br>
         <p>Name : <input type="text" ng-model="name"></p>
         <h1 ng-show="exibe(name)">Hello {{ name.capitalizeFirstLetter() }}</h1>
@@ -17,7 +31,7 @@
     <div>
         <p>Name: <input type="text" ng-model="name"></p>
         <p ng-bind="name"></p>
-      </div>
+      </div> -->
 </body>
 
 </html>

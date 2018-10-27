@@ -1,0 +1,17 @@
+html, body {
+	min-height: 100vh;
+}
+.mh-100 {
+
+}
+.photo-panel{
+	
+}
+.photo-panel > img {
+	position: absolute;
+	z-index: 10;
+	width: 105px;
+	height: 145px;
+	top: 120px;
+	left: 25px;
+}
