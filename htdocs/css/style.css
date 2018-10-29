@@ -11,3 +11,8 @@ html, body {
 	min-height: 100vh;
 	z-index: 0;
 }
+.btnd {
+	background-color: #040203 !important;
+	border: none;
+	border-radius: 15px;
+}

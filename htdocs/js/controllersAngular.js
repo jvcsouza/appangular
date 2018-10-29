@@ -26,5 +26,5 @@ app.controller('myCtrl', function($scope) {
         }
         setTimeout(() => {
             document.getElementById("txtnome").focus();
-        }, 1501);
+        }, 1600);
 });
