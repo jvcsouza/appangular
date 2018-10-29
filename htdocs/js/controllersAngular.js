@@ -13,7 +13,6 @@ app.controller('myCtrl', function($scope) {
         $scope.name = null;
         $scope.sobrenome = null;
         document.getElementById("caixa").animate([
-            // keyframes
             { transform: 'translateY(100px)' }, 
             { transform: 'translateY(-100px)' },
             { transform: "skewY(10deg)" },
