@@ -29,7 +29,7 @@
     </div> -->
     <div style="z-index:10; position: relative;" class="p-5">
         <h2 ng-show="exibe(name, sobrenome)">
-            Hello {{ name + " " + sobrenome }} !!
+            Hello {{ name.capitalize() + " " + sobrenome.capitalize() }} !!
         </h2>
         <div class="pt-3 form-group">
             <label>Nome</label>

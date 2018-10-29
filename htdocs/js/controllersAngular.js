@@ -1,7 +1,6 @@
-String.prototype.capitalizeFirstLetter = function() {
+String.prototype.capitalize = function() {
     return this.charAt(0).toUpperCase() + this.slice(1);
 }
-
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope) {
     $scope.name = "Hello";
