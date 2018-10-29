@@ -12,6 +12,20 @@ app.controller('myCtrl', function($scope) {
     $scope.limpar = () => {
         $scope.name = null;
         $scope.sobrenome = null;
-        document.getElementById("txtnome").focus();
-    }
+        document.getElementById("caixa").animate([
+            // keyframes
+            { transform: 'translateY(100px)' }, 
+            { transform: 'translateY(-100px)' },
+            { transform: "skewY(10deg)" },
+            { transform: "scaleY(-1)" },
+            { transform: 'translateY(100px)' }, 
+            { transform: 'translateY(0)' },
+          ], { 
+            duration: 1500,
+            iterations: 1
+          });
+        }
+        setTimeout(() => {
+            document.getElementById("txtnome").focus();
+        }, 1501);
 });
