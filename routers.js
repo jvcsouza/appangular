@@ -14,5 +14,13 @@ serverRouter.get("/", (r, res) => res.send("Configuração de Router!"));
 serverRouter.get("/msg", (req, res) => {
     res.json({message: "foi!"});
 });
+dadosRouter.get('/userlist', function(req, res) {
+	var db = require("./db");
+	var Users = db.Mongoose.model('usercollection', db.UserSchema, 'usercollection');
+	Users.find({}).lean().exec(
+	   function (e, docs) {
+		  res.render('userlist', { "userlist": docs });
+	});
+  });
 
 module.exports = {serverRouter, dadosRouter};
