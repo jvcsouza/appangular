@@ -22,7 +22,7 @@ dadosRouter.get("/add", (req, res) => {
 	const user = new Users({
 		username: usern, 
 		email: faker.internet.email(usern),
-		foto: faker.internet.avatar()
+		foto: faker.image.people()
 	});
 	user.save((e) => {
 		if(e) return handlerError(e);
