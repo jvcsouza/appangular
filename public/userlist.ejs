@@ -1,13 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head></head>
-<body>
- <h1 class="text-center title-1"> Lista de Usu&aacute;rios </h1>
- <ul>
- <% userlist.forEach(function(user){ %>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body class="bg-primary">
+<div class="row container-fluid no-gutters">
+<% userlist.forEach(function(user){ %>
+    <div class="col col-6 col-md-3">
+        <div class="card m-1 m-md-3">
+            <img class="card-img-top img-fluid" src="<%= user.foto %>" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title"><%= user.username %></h5>
+                <p class="card-text"><%= user.jobTitle %></p>
+                <p class="card-text"><%= user.jobArea %></p>
+                <a href="mailto:<%= user.email %>" class="btn btn-primary">Entrar em Contato</a>
+            </div>
+        </div>
+    </div>
+<%})%>
+</div>
+<!-- <h1 class="text-center title-1"> Lista de Usu&aacute;rios </h1>
+<ul>
+<% userlist.forEach(function(user){ %>
     <img src="<%= user.foto %>" alt="">
- <li><a usermail="<%= user.email %>" username="<%= user.username %>" href="mailto:<%= user.email %>"><%= user.username %></a></li> 
- <%})%>
- </ul>
+<li><a usermail="<%= user.email %>" username="<%= user.username %>" href="mailto:<%= user.email %>"><%= user.username %></a></li> 
+<%})%>
+</ul> -->
 </body>
 </html>

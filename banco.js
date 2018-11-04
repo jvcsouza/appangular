@@ -7,7 +7,10 @@ mongoose.connect(url, {useNewUrlParser:true})
 const userSchema = new mongoose.Schema({
     username: String,
     email: String,
-    foto: String
+    foto: String,
+    jobTitle: String,
+    jobArea: String,
+    jobDesc: String
 }, { collection: 'usercollection' });
 
 module.exports = { 
