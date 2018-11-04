@@ -2,6 +2,7 @@ const express = require("express");
 dadosRouter = express.Router();
 const banco = require("../banco");
 const faker = require("faker");
+faker.locale = "pt_BR";
 const Users = banco.Mongoose.model('usercollection', banco.UserSchema, 'usercollection');
 
 dadosRouter.get("/", (req, res) => res.send("Configuração de Dados!"))
