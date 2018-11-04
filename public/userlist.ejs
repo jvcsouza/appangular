@@ -5,6 +5,7 @@
  <h1 class="text-center title-1"> Lista de Usu&aacute;rios </h1>
  <ul>
  <% userlist.forEach(function(user){ %>
+    <img src="<%= user.foto %>" alt="">
  <li><a usermail="<%= user.email %>" username="<%= user.username %>" href="mailto:<%= user.email %>"><%= user.username %></a></li> 
  <%})%>
  </ul>
